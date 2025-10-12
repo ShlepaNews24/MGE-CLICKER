@@ -4,7 +4,7 @@
     "slug": "mge-brothers-clicker",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/images/icon.png",
+    "icon": "./assets/images/icon.png",  // Путь к иконке уже указан — оставляем как есть
     "userInterfaceStyle": "light",
     "newArchEnabled": true,
     "splash": {
@@ -12,20 +12,20 @@
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
-    "assets": [
-      "./assets"
+    "assetBundlePatterns": [  // Добавлено: заменяет устаревшее "assets" для корректного включения всех файлов в бандл (включая иконку в ./assets/images/)
+      "**/*"  // Универсальный паттерн — включает все файлы из ./assets/, ./assets/images/ и т.д.
     ],
     "ios": {
       "supportsTablet": true
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
+        "foregroundImage": "./assets/images/adaptive-icon.png",
         "backgroundColor": "#ffffff"
       },
       "edgeToEdgeEnabled": true,
       "predictiveBackGestureEnabled": false,
-      "package": "com.LesnayaBratva.mgeclicker",
+      "package": "com.LesnayaBratva.mgeclicker"
     },
     "web": {
       "favicon": "./assets/favicon.png"
