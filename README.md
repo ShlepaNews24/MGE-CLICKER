@@ -1,1 +1,5 @@
-![обложка] (assets/images/icon.png)
+# Мой проект
+
+![Иконка проекта](assets/images/icon.png)
+
+Здесь описание проекта.
